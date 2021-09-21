@@ -4,7 +4,19 @@
   "main": "index.js",
   "repository": "https://github.com/martinsalinep/clean-node-api.git",
   "license": "MIT",
+  "lint-staged": {
+    "*.js": [
+      "standart"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "devDependencies": {
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
     "standart": "^6.1.0"
   }
 }
