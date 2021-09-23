@@ -16,7 +16,8 @@
     "standart": "^6.1.0"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest --watchAll",
+    "test:staged": "jest"
   },
   "dependencies": {
     "express": "^4.17.1",
